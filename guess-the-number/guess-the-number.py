@@ -20,4 +20,3 @@ while True:
         print("Too low! Try again.")
     else:
         print("Too high! Try again.")
-
