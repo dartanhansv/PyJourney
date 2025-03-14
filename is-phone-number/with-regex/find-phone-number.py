@@ -8,7 +8,7 @@ import re
 phoneNumberRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 # String to check
-data = "Any random text where phone number such as 111-222-3333 or 123-456-7890 can be found."
+data = "Phone Number Formats: US: 111-222-3333 and 123-456-7890  GER: 123 4567890  "
 
 # search for the pattern
 PhoneFound = phoneNumberRegex.findall(data)
