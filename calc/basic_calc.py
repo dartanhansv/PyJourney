@@ -1,6 +1,6 @@
-'''
+"""
 A calculator that performs basic arithmetic operations
-'''
+"""
 
 # Greating
 print("\n Welcome to the Basic_Calc!\n")

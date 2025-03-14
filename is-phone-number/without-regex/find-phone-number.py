@@ -1,6 +1,6 @@
-'''
+"""
 This is an example of pattern matiching without using regular expressions
-'''
+"""
 
 
 # check if it a phone number in US format: "AreaCode-ExcahngeCode-SubscriberNumber" = xxx-xxx-xxxx
@@ -17,7 +17,7 @@ def isPhoneNumber(input_var):
             return False
 
     # check if the 4th digit (index 3) is dash
-    if input_var[3] != '-':
+    if input_var[3] != "-":
         return False
 
     # repeat the decimal check for the next 3 digits
@@ -26,7 +26,7 @@ def isPhoneNumber(input_var):
             return False
 
     # check if the 8th digit (index 7) is dash
-    if input_var[7] != '-':
+    if input_var[7] != "-":
         # if missing the 2nd dash, return false
         return False
 
@@ -42,7 +42,7 @@ data = "Any random text where phone number such as 111-222-3333 or 123-456-7890 
 
 found_Number = False
 for x in range(len(data)):
-    chunk = data[x:x+12]
+    chunk = data[x : x + 12]
     if isPhoneNumber(chunk):
         print(f"Phone number found: {chunk}")
         found_number = True
