@@ -8,7 +8,7 @@ import re
 phoneNumberRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 # String to check
-data = "Phone Number Formats: US: 111-222-3333 and 123-456-7890  GER: 123 4567890  "
+data = "Phone Number Formats: US: 111-222-3333 and 123-456-7890  GER: 123 4567890"
 
 # search for the pattern
 PhoneFound = phoneNumberRegex.findall(data)
